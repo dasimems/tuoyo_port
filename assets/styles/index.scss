@@ -157,6 +157,7 @@ body{
             padding-bottom: 30px;
             position: relative;
             overflow: hidden;
+            z-index: -1;
 
             .hero-content{
                 flex: 1;
@@ -231,6 +232,23 @@ body{
 
             }
 
+        }
+
+        .qualities-section{
+            background: black;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            margin-top: -50px;
+
+            .quality-card{
+                .quality-card-title{
+                    font-size: 2rem;
+                }
+
+                .quality-card-content {
+                    margin-top: 15px;
+                }
+            }
         }
     }
 

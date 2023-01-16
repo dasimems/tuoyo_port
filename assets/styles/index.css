@@ -145,6 +145,7 @@ body .main-body .hero-section {
   padding-bottom: 30px;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 body .main-body .hero-section .hero-content {
   flex: 1;
@@ -199,6 +200,18 @@ body .main-body .hero-section .code-image {
   max-width: 300px;
   bottom: -10px;
   left: 0px;
+}
+body .main-body .qualities-section {
+  background: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: -50px;
+}
+body .main-body .qualities-section .quality-card .quality-card-title {
+  font-size: 2rem;
+}
+body .main-body .qualities-section .quality-card .quality-card-content {
+  margin-top: 15px;
 }
 body .footer {
   padding-top: 20px;
