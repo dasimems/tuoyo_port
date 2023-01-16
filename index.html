@@ -52,7 +52,12 @@
         <link rel="icon" href="images/icon/cropped-cropped-favicon-1-1-32x32.png" sizes="32x32" />
         <link rel="icon" href="images/icon/cropped-cropped-favicon-1-1-192x192.png" sizes="192x192" />
         <link rel="apple-touch-icon-precomposed" href="images/icon/cropped-cropped-favicon-1-1-180x180.png" />
-        <link rel="stylesheet" type="text/css" href="./assets/styles/index.css" media="print" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./assets/fonts/font-style.css"/>
+        <link rel="stylesheet" type="text/css" href="./assets/plugins/fontawesome/css/all.css"/>
+        <link rel="stylesheet" type="text/css" href="./assets/styles/index.css"/>
         <meta name="msapplication-TileImage" content="images/icon/cropped-cropped-favicon-1-1-270x270.png" />
         <!--complete list of meta tags at - https://gist.github.com/lancejpollard/1978404 -->
     </head>
@@ -61,11 +66,70 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav class="nav-bar flex-direction space-between align-center">
+        <nav class="nav-bar flex-container space-between align-center padding-horizontal-default">
 
-            <div class="logo"></div>
+            <div class="logo">
+                <a href="">Logo</a>
+            </div>
+
+            <ul class="nav-link-container list-style-none flex-container align-center">
+
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#featured">Featured Works</a></li>
+                <li class="nav-link"><a href="#contact">Contact me</a></li>
+
+            </ul>
 
         </nav>
+
+        <main class="main-body">
+
+            <section class="hero-section flex-container align-center space-between padding-horizontal-default">
+
+                <div class="hero-content">
+
+                    <div class="hero-name-container flex-container align-center">
+
+                        <div class="line"></div>
+
+                        <h1 class="hero-name">Fabiyi Temple Temituoyo</h1>
+
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="code">
+                            <i class="fa-solid fa-angle-left"></i>h1<i class="fa-solid fa-angle-right"></i></span>
+                        <span class="text">Creative software Engineer</span>
+                        <span class="code"><i class="fa-solid fa-angle-left"></i>/h1<i class="fa-solid fa-angle-right"></i></span>
+                        
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        I am Toronto based software engineer focused on crafting clean, user-friendly experiences. I enjoy building excellent software that improves the lives of those around me. That sounds good to you? Hit me up
+                    </p>
+
+                    <a href="#contact" class="hero-cta button">Contact me</a>
+
+                    <img src="./assets/icons/arrow.svg" alt="" class="arrow" />
+
+
+                </div>
+
+                <div class="hero-image">
+                    <img src="./assets/images/my_image.png" alt="Fabiyi Temple Temituoyo" />
+                </div>
+
+                <img src="./assets/images/code.png" alt="" class="code-image" />
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+
+            <p class="footer-text">Copyright &copy; 2022 Fabiyi Temple Temituoyo. All rights reserved</p>
+
+        </footer>
 
         <script src="" async defer></script>
     </body>

@@ -4,6 +4,20 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+button,
+.button {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 7px 10px;
+  display: inline-flex;
+  outline: none;
+}
+
 .flex-container {
   display: flex;
 }
@@ -80,4 +94,120 @@
 .padding-vertical-default {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background: #121212;
+  color: white;
+}
+body .nav-bar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  background: #575757;
+  font-family: poppins;
+}
+body .nav-bar a {
+  color: black;
+}
+body .nav-bar .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+body .nav-bar .nav-link-container .nav-link:not(:first-child) {
+  margin-left: 20px;
+}
+body .main-body {
+  min-height: 100vh;
+}
+body .main-body .hero-section {
+  width: 100%;
+  height: 658px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+body .main-body .hero-section .hero-content {
+  flex: 1;
+  position: relative;
+}
+body .main-body .hero-section .hero-content .hero-name-container .line {
+  width: 150px;
+  height: 3px;
+  background: white;
+}
+body .main-body .hero-section .hero-content .hero-name-container .hero-name {
+  margin-left: 7px;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+body .main-body .hero-section .hero-content .hero-title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+body .main-body .hero-section .hero-content .hero-title .code {
+  color: #5994FF;
+}
+body .main-body .hero-section .hero-content .hero-subtitle {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin-top: 20px;
+}
+body .main-body .hero-section .hero-content .hero-cta {
+  border-radius: 5px;
+  background: #5994FF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+}
+body .main-body .hero-section .hero-content .arrow {
+  position: absolute;
+  max-width: 200px;
+  bottom: 10px;
+  left: 180px;
+}
+body .main-body .hero-section .hero-image img {
+  max-width: 406px;
+}
+body .main-body .hero-section .code-image {
+  position: absolute;
+  max-width: 300px;
+  bottom: -10px;
+  left: 0px;
+}
+body .footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 3px solid black;
+}
+body .footer p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  color: white;
 }/*# sourceMappingURL=index.css.map */
