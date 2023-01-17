@@ -234,7 +234,8 @@ body .main-body .qualities-section .quality-card .quality-card-content {
 }
 body .main-body .experience-section,
 body .main-body .skills-section,
-body .main-body .works-section {
+body .main-body .works-section,
+body .main-body .contact-section {
   font-family: "Noto Sans", sans-serif;
   position: relative;
 }
@@ -407,6 +408,86 @@ body .main-body .works-section .works-cards-container .work-card .work-title {
   font-size: 1.3rem;
   font-weight: 500;
   margin-top: 20px;
+}
+body .main-body .contact-section .contact-container {
+  margin-top: 30px;
+}
+body .main-body .contact-section .contact-container .contact-content .description {
+  font-size: 1.5rem;
+}
+body .main-body .contact-section .contact-container .contact-content .contact-details {
+  margin-top: 20px;
+}
+body .main-body .contact-section .contact-container .contact-content .contact-details .contact-details-title {
+  font-weight: 500;
+}
+body .main-body .contact-section .contact-container .contact-content .contact-details .contact-details-content {
+  margin-top: 10px;
+  color: white;
+}
+body .main-body .contact-section .contact-container .contact-content .contact-details .contact-details-content:not(.flex-container) {
+  display: inline-block;
+}
+body .main-body .contact-section .contact-container .contact-content .contact-details .contact-details-content .text {
+  margin-left: 10px;
+}
+body .main-body .contact-section .contact-container .contact-content .contact-details .contact-details-content li a {
+  font-size: 1.7rem;
+  color: white;
+}
+body .main-body .contact-section .contact-container .contact-content .contact-details .contact-details-content li:not(:first-child) {
+  margin-left: 10px;
+}
+body .main-body .contact-section .contact-container .contact-content form {
+  width: 100%;
+}
+body .main-body .contact-section .contact-container .contact-content form textarea, body .main-body .contact-section .contact-container .contact-content form input {
+  width: 100%;
+  color: white;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  padding: 0px 10px;
+  background: rgba(255, 255, 255, 0.4);
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  font-family: "Noto Sans", sans-serif;
+}
+body .main-body .contact-section .contact-container .contact-content form textarea::-moz-placeholder, body .main-body .contact-section .contact-container .contact-content form input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+body .main-body .contact-section .contact-container .contact-content form textarea:-ms-input-placeholder, body .main-body .contact-section .contact-container .contact-content form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+body .main-body .contact-section .contact-container .contact-content form textarea::placeholder, body .main-body .contact-section .contact-container .contact-content form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+body .main-body .contact-section .contact-container .contact-content form textarea {
+  height: 150px;
+  padding: 10px;
+}
+body .main-body .contact-section .contact-container .contact-content form input {
+  height: 45px;
+}
+body .main-body .contact-section .contact-container .contact-content form input.half-input-width {
+  width: 48%;
+}
+body .main-body .contact-section .contact-container .contact-content form button {
+  padding: 15px 20px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  color: #5994FF;
+  border: 2px solid #5994FF;
+}
+body .main-body .contact-section .contact-container .contact-content form button .text {
+  margin-left: 10px;
+  font-weight: 500;
 }
 body .footer {
   padding-top: 20px;

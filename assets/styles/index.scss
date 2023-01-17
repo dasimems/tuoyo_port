@@ -272,7 +272,8 @@ body{
 
         .experience-section,
         .skills-section,
-        .works-section{
+        .works-section,
+        .contact-section{
 
             font-family: 'Noto Sans', sans-serif;
             position: relative;
@@ -509,6 +510,110 @@ body{
                         margin-top: 20px;
                     }
                 }
+            }
+        }
+
+        .contact-section{
+            .contact-container{
+                margin-top: 30px;
+
+                .contact-content{
+
+                    .description{
+                        font-size: 1.5rem;
+                    }
+
+                    .contact-details{
+                        margin-top: 20px;
+
+                        .contact-details-title{
+                            font-weight: 500;
+                        }
+
+                        .contact-details-content{
+                            margin-top: 10px;
+                            color: white;
+                            
+                            &:not(.flex-container){
+                                display: inline-block;
+
+                            }
+
+                            .text{
+                                margin-left: 10px;
+                            }
+
+                            li{
+
+                                a{
+                                    font-size: 1.7rem;
+                                    color: white;
+                                }
+
+                                &:not(:first-child){
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    form{
+                        width: 100%;
+
+                        textarea, input{
+                            width: 100%;
+                            color: white;
+                            border-radius: 7px;
+                            -webkit-border-radius: 7px;
+                            -moz-border-radius: 7px;
+                            -ms-border-radius: 7px;
+                            -o-border-radius: 7px;
+                            padding: 0px 10px;
+                            background: rgba(255, 255, 255, .4);
+                            outline: none;
+                            border: none;
+                            margin-bottom: 20px;
+                            font-family: 'Noto Sans', sans-serif;
+
+                            &::placeholder{
+                                color: rgba(255, 255, 255, .7);
+                            }
+                        }
+
+                        textarea{
+                            height: 150px;
+                            padding: 10px;
+                        }
+
+                        input{
+                            height: 45px;
+
+
+                            &.half-input-width{
+                                width: 48%;
+                            }
+                        }
+
+                        button{
+                            padding: 15px 20px;
+                            border-radius: 7px;
+                            -webkit-border-radius: 7px;
+                            -moz-border-radius: 7px;
+                            -ms-border-radius: 7px;
+                            -o-border-radius: 7px;
+                            color: #5994FF;
+                            border: 2px solid #5994FF;
+
+                            .text{
+                                margin-left: 10px;
+                                font-weight: 500;
+                            }
+
+
+}
+                    }
+                }
+
             }
         }
     }
