@@ -66,6 +66,10 @@ button,
   width: 45%;
 }
 
+.half-width-full {
+  width: 50%;
+}
+
 .column {
   flex-direction: column;
 }
@@ -224,8 +228,11 @@ body .main-body .qualities-section .quality-card .quality-card-title {
 body .main-body .qualities-section .quality-card .quality-card-content {
   margin-top: 15px;
 }
-body .main-body .experience-section {
+body .main-body .experience-section,
+body .main-body .skills-section,
+body .main-body .works-section {
   font-family: "Noto Sans", sans-serif;
+  position: relative;
 }
 body .main-body .experience-section .experience-container {
   margin-top: 40px;
@@ -301,6 +308,73 @@ body .main-body .experience-section .experience-container .experience-content .c
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+}
+body .main-body .skills-section .skills-container {
+  margin-top: 40px;
+}
+body .main-body .skills-section .skills-container .skills-content .skills-content-title {
+  transform: rotateZ(-90deg);
+  -webkit-transform: rotateZ(-90deg);
+  -moz-transform: rotateZ(-90deg);
+  -ms-transform: rotateZ(-90deg);
+  -o-transform: rotateZ(-90deg);
+}
+body .main-body .skills-section .skills-container .skills-content .skills-content-title h2 {
+  color: rgba(255, 255, 255, 0.4);
+}
+body .main-body .skills-section .skills-container .skills-content .skills-content-skills {
+  flex: 1;
+}
+body .main-body .skills-section .skills-container .skills-content .skills-content-skills .content-one {
+  width: 100%;
+  margin-bottom: 20px;
+}
+body .main-body .skills-section .skills-container .skills-content .skills-content-skills .content-one .skill-set-card .skills-set {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(#5994FF 320deg, white 0deg);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+body .main-body .skills-section .skills-container .skills-content .skills-content-skills .content-one .skill-set-card .skills-set .skills-set-percentage {
+  position: absolute;
+  background: black;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main-body .skills-section .skills-container .skills-content .skills-content-skills .content-one .skill-set-card .skill-text {
+  margin-top: 10px;
+}
+body .main-body .skills-section .skills-container .skills-content:first-child .skills-content-title {
+  margin-left: -30px;
+}
+body .main-body .works-section .subtitle {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
 }
 body .footer {
   padding-top: 20px;
