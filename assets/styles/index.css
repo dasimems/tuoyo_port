@@ -105,6 +105,17 @@ html {
   font-size: 14px;
 }
 
+.title {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.colored {
+  color: #5994FF;
+}
+
 body {
   font-family: "Fira Code", monospace;
   background: #121212;
@@ -212,6 +223,84 @@ body .main-body .qualities-section .quality-card .quality-card-title {
 }
 body .main-body .qualities-section .quality-card .quality-card-content {
   margin-top: 15px;
+}
+body .main-body .experience-section {
+  font-family: "Noto Sans", sans-serif;
+}
+body .main-body .experience-section .experience-container {
+  margin-top: 40px;
+}
+body .main-body .experience-section .experience-container .experience-content .content-title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  max-width: 450px;
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-design {
+  width: 40px;
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-design .icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #5994FF;
+  font-size: 1.3rem;
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-design .line {
+  width: 3px;
+  height: calc(100% - 48px);
+  margin: 4px 0px;
+  background: #5994FF;
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-content {
+  flex: 1;
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-content .experience-date {
+  background: #575757;
+  height: 40px;
+  padding: 5px 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-content .experience-details-title {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-content .experience-details-title .inner-title {
+  font-size: 1rem;
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-content .experience-details-list {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-content .experience-details-list li:not(:first-child) {
+  margin-top: 10px;
+}
+body .main-body .experience-section .experience-container .experience-content .cv-btn {
+  border: 2px solid #5994FF;
+  margin-left: 60px;
+  color: #5994FF;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
 }
 body .footer {
   padding-top: 20px;

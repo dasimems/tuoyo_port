@@ -106,6 +106,17 @@ html{
     font-size: 14px;
 }
 
+.title{
+    color: rgba(255, 255, 255, .5);
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.colored{
+    color: #5994FF;
+}
+
 body{
     font-family: 'Fira Code', monospace;
     background: #121212;
@@ -249,6 +260,108 @@ body{
                     margin-top: 15px;
                 }
             }
+        }
+
+        .experience-section{
+            font-family: 'Noto Sans', sans-serif;
+
+            .experience-container{
+                margin-top: 40px;
+
+                .experience-content{
+
+                    .content-title{
+                        font-size: 2.8rem;
+                        font-weight: 500;
+                        max-width: 450px;
+                    }
+
+                    .experience-details{
+
+                        .experience-details-design{
+                            width: 40px;
+
+                            .icon{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                -ms-border-radius: 50%;
+                                -o-border-radius: 50%;
+                                background: #5994FF;
+                                font-size: 1.3rem;
+                            }
+
+                            .line{
+                                width: 3px;
+                                height: calc(100% - 48px);
+                                margin: 4px 0px;
+                                background: #5994FF;
+                            }
+                        }
+
+                        .experience-details-content{
+                            flex: 1;
+                            margin-left: 20px;
+                            padding-bottom: 30px;
+
+
+                            .experience-date{
+                                background: #575757;
+                                height: 40px;
+                                padding: 5px 20px;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 7px;
+                                -webkit-border-radius: 7px;
+                                -moz-border-radius: 7px;
+                                -ms-border-radius: 7px;
+                                -o-border-radius: 7px;
+                            }
+
+                            .experience-details-title{
+                                margin-top: 10px;
+                                font-size: 1.2rem;
+                                text-transform: uppercase;
+
+                                .inner-title{
+                                    font-size: 1rem;
+                                }
+                            }
+
+                            .experience-details-list{
+                                margin-top: 10px;
+                                padding-left: 20px;
+                                font-size: 0.95rem;
+                                color: rgba(255, 255, 255, .8);
+
+                                li{
+                                    &:not(:first-child){
+                                        margin-top: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .cv-btn{
+                        border: 2px solid #5994FF;
+                        margin-left: 60px;
+                        color: #5994FF;
+                        padding: 15px 20px;
+                        font-weight: 500;
+                        font-size: 1.1rem;
+                        border-radius: 7px;
+                        -webkit-border-radius: 7px;
+                        -moz-border-radius: 7px;
+                        -ms-border-radius: 7px;
+                        -o-border-radius: 7px;
+                    }
+
+                }
+            }
+
         }
     }
 
