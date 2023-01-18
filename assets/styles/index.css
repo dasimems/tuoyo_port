@@ -108,8 +108,8 @@ button,
 }
 
 .padding-vertical-default {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: clamp(50px, 7vw, 100px);
+  padding-bottom: clamp(50px, 7vw, 100px);
 }
 
 .list-style-none {
@@ -124,7 +124,7 @@ html {
 .title {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   text-align: center;
 }
 
@@ -187,24 +187,25 @@ body .main-body .hero-section .hero-content {
   position: relative;
 }
 body .main-body .hero-section .hero-content .hero-name-container .line {
-  width: 150px;
+  width: clamp(30px, 8vw, 150px);
   height: 3px;
   background: white;
 }
 body .main-body .hero-section .hero-content .hero-name-container .hero-name {
   margin-left: 7px;
-  font-size: 1.7rem;
+  font-size: clamp(1rem, 2vw, 1.7rem);
   font-weight: 500;
 }
 body .main-body .hero-section .hero-content .hero-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.1rem, 3vw, 2.5rem);
   margin-top: 20px;
 }
 body .main-body .hero-section .hero-content .hero-title .code {
   color: #5994FF;
 }
 body .main-body .hero-section .hero-content .hero-subtitle {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1vw, 1.3rem);
+  width: 100%;
   max-width: 700px;
   margin-top: 20px;
 }
@@ -227,14 +228,18 @@ body .main-body .hero-section .hero-content .arrow {
   bottom: 10px;
   left: 180px;
 }
-body .main-body .hero-section .hero-image img {
+body .main-body .hero-section .hero-image {
+  width: 100%;
   max-width: 406px;
+}
+body .main-body .hero-section .hero-image img {
+  max-width: 100%;
 }
 body .main-body .hero-section .code-image {
   position: absolute;
-  max-width: 300px;
-  bottom: -10px;
-  left: 0px;
+  max-width: clamp(100px, 20vw, 300px);
+  top: calc(100% + 20px);
+  right: calc(100% - clamp(100px, 20vw, 300px) + 10px);
 }
 body .main-body .qualities-section {
   background: black;
@@ -260,7 +265,7 @@ body .main-body .experience-section .experience-container {
   margin-top: 40px;
 }
 body .main-body .experience-section .experience-container .experience-content .content-title {
-  font-size: 2.8rem;
+  font-size: clamp(1.5rem, 3.4vw, 2.8rem);
   font-weight: 500;
   max-width: 450px;
 }
@@ -303,7 +308,7 @@ body .main-body .experience-section .experience-container .experience-content .e
 }
 body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-content .experience-details-title {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   text-transform: uppercase;
 }
 body .main-body .experience-section .experience-container .experience-content .experience-details .experience-details-content .experience-details-title .inner-title {
@@ -342,6 +347,7 @@ body .main-body .skills-section .skills-container .skills-content .skills-conten
   -o-transform: rotateZ(-90deg);
 }
 body .main-body .skills-section .skills-container .skills-content .skills-content-title h2 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
   color: rgba(255, 255, 255, 0.4);
 }
 body .main-body .skills-section .skills-container .skills-content .skills-content-skills {
@@ -352,8 +358,8 @@ body .main-body .skills-section .skills-container .skills-content .skills-conten
   margin-bottom: 20px;
 }
 body .main-body .skills-section .skills-container .skills-content .skills-content-skills .content-one .skill-set-card .skills-set {
-  width: 60px;
-  height: 60px;
+  width: clamp(40px, 6vw, 60px);
+  height: clamp(40px, 6vw, 60px);
   border-radius: 50%;
   background: conic-gradient(#5994FF 320deg, white 0deg);
   -webkit-border-radius: 50%;
@@ -384,9 +390,12 @@ body .main-body .skills-section .skills-container .skills-content .skills-conten
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: clamp(0.7rem, 1.1vw, 1.5rem);
 }
 body .main-body .skills-section .skills-container .skills-content .skills-content-skills .content-one .skill-set-card .skill-text {
   margin-top: 10px;
+  font-size: clamp(0.8rem, 1.5vw, 1.1rem);
+  text-align: center;
 }
 body .main-body .skills-section .skills-container .skills-content:first-child .skills-content-title {
   margin-left: -30px;
@@ -394,9 +403,13 @@ body .main-body .skills-section .skills-container .skills-content:first-child .s
 body .main-body .works-section .works-cards-container {
   margin-top: 60px;
 }
+body .main-body .works-section .works-cards-container .work-card {
+  max-width: 360px;
+  min-width: unset;
+}
 body .main-body .works-section .works-cards-container .work-card .work-card-image {
   width: 100%;
-  height: 450px;
+  height: clamp(370px, 30vw, 430px);
   background: rgba(255, 255, 255, 0.1);
   -webkit-clip-path: polygon(17% 0, 84% 0, 100% 13%, 100% 83%, 84% 100%, 14% 100%, 0 84%, 0 15%);
   clip-path: polygon(17% 0, 84% 0, 100% 13%, 100% 83%, 84% 100%, 14% 100%, 0 84%, 0 15%);
@@ -485,6 +498,11 @@ body .main-body .contact-section .contact-container .contact-content form input 
 body .main-body .contact-section .contact-container .contact-content form input.half-input-width {
   width: 48%;
 }
+@media only screen and (max-width: 371px) {
+  body .main-body .contact-section .contact-container .contact-content form input.half-input-width {
+    width: 100%;
+  }
+}
 body .main-body .contact-section .contact-container .contact-content form button {
   padding: 15px 20px;
   border-radius: 7px;
@@ -513,6 +531,10 @@ body .main-body .testimonial-section .testimonial-cards-container .testimonial-c
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+  width: 100%;
+  max-width: 300px;
+  flex-shrink: 0;
+  min-width: unset;
 }
 body .main-body .testimonial-section .testimonial-cards-container .testimonial-card:not(:first-child) {
   margin-left: 20px;
@@ -575,4 +597,67 @@ body .footer p {
   margin: 0px;
   padding: 0px;
   color: white;
+}
+@media only screen and (max-width: 996px) {
+  body .nav-bar .desktop-link {
+    display: none;
+  }
+  body .main-body .hero-section {
+    height: unset;
+    padding-bottom: 80px;
+    padding-top: 130px;
+  }
+  body .main-body .hero-section .hero-content {
+    width: 100%;
+    flex: unset;
+  }
+  body .main-body .hero-section .code-image {
+    z-index: -1;
+  }
+  body .main-body .skills-section .skills-container .skills-content {
+    width: 100%;
+  }
+  body .main-body .skills-section .skills-container .skills-content .skills-content-title {
+    margin-left: -30px;
+  }
+  body .main-body .skills-section .skills-container .skills-content .skills-content-skills {
+    margin-left: -15px;
+  }
+  body .main-body .skills-section .skills-container .skills-content:not(:first-child) {
+    margin-top: 40px;
+  }
+  body .main-body .works-section .works-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main-body .works-section .works-cards-container .work-card {
+    width: 100%;
+  }
+  body .main-body .works-section .works-cards-container .work-card:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 572px) {
+  body .main-body .qualities-section .quality-card {
+    width: 100%;
+  }
+  body .main-body .qualities-section .quality-card:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 874px) {
+  body .main-body .experience-section .experience-container .experience-content {
+    width: 100%;
+  }
+  body .main-body .experience-section .experience-container .experience-content:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body .main-body .contact-section .contact-container .contact-content {
+    width: 100%;
+  }
+  body .main-body .contact-section .contact-container .contact-content:not(:first-child) {
+    margin-top: 30px;
+  }
 }/*# sourceMappingURL=index.css.map */
