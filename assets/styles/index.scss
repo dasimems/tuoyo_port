@@ -65,14 +65,22 @@ button,
 
 .half-width{
     width: 45%;
+    min-width: 45%;
 }
 
 .half-width-full{
     width: 50%;
+    min-width: 50%;
 }
 
 .one-third-width{
     width: 31%;
+    min-width: 31%;
+}
+
+.one-fourth-width{
+    width: 23%;
+    min-width: 23%;
 }
 
 .column{
@@ -118,6 +126,14 @@ html{
     color: rgba(255, 255, 255, .5);
     text-transform: uppercase;
     font-size: 3rem;
+    text-align: center;
+}
+
+.subtitle{
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -273,7 +289,8 @@ body{
         .experience-section,
         .skills-section,
         .works-section,
-        .contact-section{
+        .contact-section,
+        .testimonial-section{
 
             font-family: 'Noto Sans', sans-serif;
             position: relative;
@@ -467,13 +484,7 @@ body{
 
         .works-section{
 
-            .subtitle{
-                max-width: 500px;
-                width: 100%;
-                margin: auto;
-                margin-top: 15px;
-                text-align: center;
-            }
+            
 
             .works-cards-container{
                 margin-top: 60px;
@@ -611,6 +622,90 @@ body{
 
 
 }
+                    }
+                }
+
+            }
+        }
+
+        .testimonial-section{
+
+            .testimonial-cards-container{
+                margin-top: 30px;
+                width: 100%;
+                overflow: hidden;
+
+                .testimonial-card{
+                    padding: 20px;
+                    background: #E9FBFF;
+                    color: black;
+                    border-radius: 7px;
+                    -webkit-border-radius: 7px;
+                    -moz-border-radius: 7px;
+                    -ms-border-radius: 7px;
+                    -o-border-radius: 7px;
+                    
+                    &:not(:first-child){
+                        margin-left: 20px;
+                    }
+                    
+                    
+                    q{
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
+
+                    .review-details{
+                        margin-top: 10px;
+
+                        .review-image{
+                            min-width: 50px;
+                            width: 50px;
+                            height: 50px;
+                            background: rgba(0, 0, 0, .2);
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                            -o-border-radius: 50%;
+                        }
+
+                        .review-details-content{
+                            margin-left: 10px;
+
+                            .review-position{
+                                font-size: 0.85rem;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .testimonial-progress-bar-container{
+
+                .progress-bar{
+                    width: 100%;
+                    max-width: 300px;
+                    height: 10px;
+                    border-radius: 40px;
+                    -webkit-border-radius: 40px;
+                    -moz-border-radius: 40px;
+                    -ms-border-radius: 40px;
+                    -o-border-radius: 40px;
+                    background: white;
+                    margin-top: 50px;
+                    overflow: hidden;
+
+                    .progress-bar-active{
+                        width: 50%;
+                        height: 100%;
+                        background: #5994FF;
+                        border-radius: 40px;
+                        -webkit-border-radius: 40px;
+                        -moz-border-radius: 40px;
+                        -ms-border-radius: 40px;
+                        -o-border-radius: 40px;
                     }
                 }
 

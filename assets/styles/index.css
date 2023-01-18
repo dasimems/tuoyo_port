@@ -64,14 +64,22 @@ button,
 
 .half-width {
   width: 45%;
+  min-width: 45%;
 }
 
 .half-width-full {
   width: 50%;
+  min-width: 50%;
 }
 
 .one-third-width {
   width: 31%;
+  min-width: 31%;
+}
+
+.one-fourth-width {
+  width: 23%;
+  min-width: 23%;
 }
 
 .column {
@@ -117,6 +125,14 @@ html {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
   font-size: 3rem;
+  text-align: center;
+}
+
+.subtitle {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -235,7 +251,8 @@ body .main-body .qualities-section .quality-card .quality-card-content {
 body .main-body .experience-section,
 body .main-body .skills-section,
 body .main-body .works-section,
-body .main-body .contact-section {
+body .main-body .contact-section,
+body .main-body .testimonial-section {
   font-family: "Noto Sans", sans-serif;
   position: relative;
 }
@@ -374,13 +391,6 @@ body .main-body .skills-section .skills-container .skills-content .skills-conten
 body .main-body .skills-section .skills-container .skills-content:first-child .skills-content-title {
   margin-left: -30px;
 }
-body .main-body .works-section .subtitle {
-  max-width: 500px;
-  width: 100%;
-  margin: auto;
-  margin-top: 15px;
-  text-align: center;
-}
 body .main-body .works-section .works-cards-container {
   margin-top: 60px;
 }
@@ -488,6 +498,72 @@ body .main-body .contact-section .contact-container .contact-content form button
 body .main-body .contact-section .contact-container .contact-content form button .text {
   margin-left: 10px;
   font-weight: 500;
+}
+body .main-body .testimonial-section .testimonial-cards-container {
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+body .main-body .testimonial-section .testimonial-cards-container .testimonial-card {
+  padding: 20px;
+  background: #E9FBFF;
+  color: black;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+body .main-body .testimonial-section .testimonial-cards-container .testimonial-card:not(:first-child) {
+  margin-left: 20px;
+}
+body .main-body .testimonial-section .testimonial-cards-container .testimonial-card q {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+body .main-body .testimonial-section .testimonial-cards-container .testimonial-card .review-details {
+  margin-top: 10px;
+}
+body .main-body .testimonial-section .testimonial-cards-container .testimonial-card .review-details .review-image {
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+body .main-body .testimonial-section .testimonial-cards-container .testimonial-card .review-details .review-details-content {
+  margin-left: 10px;
+}
+body .main-body .testimonial-section .testimonial-cards-container .testimonial-card .review-details .review-details-content .review-position {
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+body .main-body .testimonial-section .testimonial-progress-bar-container .progress-bar {
+  width: 100%;
+  max-width: 300px;
+  height: 10px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  background: white;
+  margin-top: 50px;
+  overflow: hidden;
+}
+body .main-body .testimonial-section .testimonial-progress-bar-container .progress-bar .progress-bar-active {
+  width: 50%;
+  height: 100%;
+  background: #5994FF;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
 }
 body .footer {
   padding-top: 20px;
