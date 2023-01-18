@@ -170,6 +170,15 @@ body .nav-bar .logo {
 body .nav-bar .nav-link-container .nav-link:not(:first-child) {
   margin-left: 20px;
 }
+body .nav-bar .open-mobile-link-btn {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+}
+body .nav-bar .mobile-link {
+  display: none;
+}
 body .main-body {
   min-height: 100vh;
 }
@@ -601,6 +610,12 @@ body .footer p {
 @media only screen and (max-width: 996px) {
   body .nav-bar .desktop-link {
     display: none;
+  }
+  body .nav-bar .mobile-link {
+    display: block;
+  }
+  body .nav-bar .mobile-link.flex-container {
+    display: flex;
   }
   body .main-body .hero-section {
     height: unset;
