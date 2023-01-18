@@ -212,6 +212,78 @@ body{
         }
     }
 
+    .page-loader{
+        position: fixed;
+        z-index: 99999;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: black;
+
+        h2{
+            
+            font-family: 'Noto Sans', sans-serif;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            
+        }
+
+        .page-loading-animation{
+            width: 200px;
+            height: 10px;
+            background: white;
+            border-radius: 40px;
+            -webkit-border-radius: 40px;
+            -moz-border-radius: 40px;
+            -ms-border-radius: 40px;
+            -o-border-radius: 40px;
+            position: relative;
+            overflow: hidden;
+
+            .loading-animation-inner-loader{
+                width: 30%;
+                height: 100%;
+                background: #5994FF;
+                border-radius: 40px;
+                -webkit-border-radius: 40px;
+                -moz-border-radius: 40px;
+                -ms-border-radius: 40px;
+                -o-border-radius: 40px;
+                animation: loader 1s ease infinite;
+                -webkit-animation: loader 1s ease infinite;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                left: 0px;
+
+                @keyframes loader{
+                    0%{
+                        left: 0px;
+
+                    }
+
+                    50%{
+                        left: 100%;
+                    }
+
+                    100%{
+                        left: -30%;
+                    }
+                    
+                }
+            }
+
+
+        }
+    }
+
     .nav-bar{
         width: 100%;
         height: 60px;

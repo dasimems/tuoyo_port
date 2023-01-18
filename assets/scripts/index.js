@@ -75,9 +75,11 @@ function closeMobileNav() {
 
 
 
-window.addEventListener("load", () => {
+window.addEventListener("load", (e) => {
+    console.log(e)
     var mobileLinkOpenMenu = Ele(".nav-bar .open-mobile-link-btn");
     var mobileLinkCloseMenu = Ele(".mobile-nav-link .mobile-nav-link-header .close-mobile-nav-button");
+    var pageLoader = Ele(".page-loader");
 
     mobileLinkOpenMenu.addEventListener("click", ()=> {
         // console.log("clicked")
@@ -87,5 +89,9 @@ window.addEventListener("load", () => {
     mobileLinkCloseMenu.addEventListener("click", ()=> {
         closeMobileNav();
     });
+
+    setTimeout(()=>{
+        pageLoader.style.display = "none";
+    }, 100)
 
 })
