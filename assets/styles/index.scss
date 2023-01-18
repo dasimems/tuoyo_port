@@ -141,6 +141,22 @@ html{
     color: #5994FF;
 }
 
+.div-image{
+    width: clamp(100px, 14vw, 160px);
+    position: absolute;
+    z-index: -1;
+}
+
+.top-div-image{
+    top: 20px;
+    left: 10px;
+}
+
+.bottom-div-image{
+    bottom: 20px;
+    right: 10px;
+}
+
 body{
     font-family: 'Fira Code', monospace;
     background: #121212;
