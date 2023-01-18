@@ -353,12 +353,14 @@ body .main-body .hero-section .hero-content .hero-cta {
   font-weight: 500;
   font-size: 1.3rem;
   padding: 10px 20px;
+  z-index: 9;
 }
 body .main-body .hero-section .hero-content .arrow {
   position: absolute;
   max-width: 200px;
   bottom: 10px;
   left: 180px;
+  z-index: -1;
 }
 body .main-body .hero-section .hero-image {
   width: 100%;
@@ -652,7 +654,12 @@ body .main-body .contact-section .contact-container .contact-content form button
 body .main-body .testimonial-section .testimonial-cards-container {
   margin-top: 30px;
   width: 100%;
-  overflow: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+body .main-body .testimonial-section .testimonial-cards-container::-webkit-scrollbar {
+  height: 0px;
 }
 body .main-body .testimonial-section .testimonial-cards-container .testimonial-card {
   padding: 20px;

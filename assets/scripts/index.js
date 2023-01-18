@@ -75,8 +75,36 @@ function closeMobileNav() {
 
 
 
+function resizeTestimonialScrollElement () {
+    
+    var testimonialCardContainer = Ele(".testimonial-section .testimonial-cards-container")
+    var testimonialWidth = testimonialCardContainer.clientWidth;
+    var testimonialScrollWidth = testimonialCardContainer.scrollWidth;
+    var scaleRatio = testimonialWidth/testimonialScrollWidth;
+    var scrollBar = Ele(".testimonial-section .testimonial-progress-bar-container .progress-bar");
+    var scrollBarThumb = Ele(".testimonial-section .testimonial-progress-bar-container .progress-bar .progress-bar-active"); 
+    var availableScrolledWidth = (scrollBar.clientWidth * scaleRatio);
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+
+    scrollBarThumb.style.width = availableScrolledWidth + "px";
+
+    testimonialCardContainer.addEventListener("scroll", (e) => {
+        var scrollPercentage = testimonialCardContainer.scrollLeft / testimonialScrollWidth;
+        var leftOff = (scrollBar.clientWidth * scrollPercentage);
+        console.dir(leftOff)
+        scrollBarThumb.style.marginLeft = leftOff + "px";
+    })
+
+    scrollBarThumb.onmousedown = (e)=>{
+
+
+    };
+
+    
+
+}
+
 window.addEventListener("load", (e) => {
-    console.log(e)
     var mobileLinkOpenMenu = Ele(".nav-bar .open-mobile-link-btn");
     var mobileLinkCloseMenu = Ele(".mobile-nav-link .mobile-nav-link-header .close-mobile-nav-button");
     var pageLoader = Ele(".page-loader");
@@ -92,6 +120,9 @@ window.addEventListener("load", (e) => {
 
     setTimeout(()=>{
         pageLoader.style.display = "none";
+        resizeTestimonialScrollElement();
     }, 100)
 
 })
+
+typeWords("I Love my parents")

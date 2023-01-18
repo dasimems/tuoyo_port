@@ -392,6 +392,7 @@ body{
                     font-weight: 500;
                     font-size: 1.3rem;
                     padding: 10px 20px;
+                    z-index: 9;
                 }
 
                 .arrow{
@@ -399,6 +400,7 @@ body{
                     max-width: 200px;
                     bottom: 10px;
                     left: 180px;
+                    z-index: -1;
                 }
             }
 
@@ -798,7 +800,14 @@ body{
             .testimonial-cards-container{
                 margin-top: 30px;
                 width: 100%;
-                overflow: hidden;
+                overflow-x: scroll;
+                -ms-overflow-style: none; /* for Internet Explorer, Edge */
+                scrollbar-width: none; /* for Firefox */
+
+                &::-webkit-scrollbar{
+                    height: 0px;
+
+                }
 
                 .testimonial-card{
                     padding: 20px;
