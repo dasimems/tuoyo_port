@@ -347,8 +347,47 @@ body{
 
     }
 
+    .alert-notification{
+        position: fixed;
+        right: -350px;
+        top: 5px;
+        z-index: 9999;
+        display: inline-flex;
+        padding: 10px 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: rgb(234, 234, 234);
+        color: black;
+        font-family: poppins;
+        max-width: 350px;
+        transition: 0.3s ease all;
+        -webkit-transition: 0.3s ease all;
+        -moz-transition: 0.3s ease all;
+        -ms-transition: 0.3s ease all;
+        -o-transition: 0.3s ease all;
+
+        &.shown{
+            right: 5px;
+        }
+
+        &.success{
+            background: rgb(26, 109, 26);
+            color: white;
+        }
+
+        &.error{
+            background: rgb(229, 59, 59);
+            color: white;
+        }
+
+}
+
     .main-body{
         min-height: 100vh;
+        position: relative;
 
         .hero-section{
             width: 100%;
@@ -358,7 +397,6 @@ body{
             padding-bottom: 30px;
             position: relative;
             overflow: hidden;
-            z-index: -1;
 
             .hero-content{
                 flex: 1;
@@ -370,6 +408,7 @@ body{
                         width: clamp(30px, 8vw, 150px);
                         height: 3px;
                         background: white;
+                        z-index: -1;
                     }
 
                     .hero-name{
@@ -408,7 +447,8 @@ body{
                     font-weight: 500;
                     font-size: 1.3rem;
                     padding: 10px 20px;
-                    z-index: 9;
+                    position: relative;
+                    display: inline-block;
                 }
 
                 .arrow{
@@ -435,6 +475,7 @@ body{
                 max-width: clamp(100px, 20vw, 300px);
                 top: calc(100% + 20px);
                 right: calc(100% - clamp(100px, 20vw, 300px) + 10px);
+                z-index: -1;
 
             }
 
@@ -553,7 +594,6 @@ body{
                         border: 2px solid #5994FF;
                         margin-left: 60px;
                         color: #5994FF;
-                        padding: 15px 20px;
                         font-weight: 500;
                         font-size: 1.1rem;
                         border-radius: 7px;
@@ -561,6 +601,27 @@ body{
                         -moz-border-radius: 7px;
                         -ms-border-radius: 7px;
                         -o-border-radius: 7px;
+                        padding: 0px;
+                        overflow: hidden;
+
+                        .download-cv-text{
+                            display: inline-block;
+                            padding: 15px 20px;
+                            letter-spacing: 0.5px;
+                            white-space: nowrap;
+                            word-break: keep-all;
+                            color: white;
+                            
+                            &.download-in-progress{
+                                background: #5994FF;
+                                display: none;
+                                width: 0%;
+                                overflow: hidden;
+
+                            }
+                            
+                            
+                        }
                     }
 
                 }

@@ -318,8 +318,42 @@ body .nav-bar .open-mobile-link-btn {
 body .nav-bar .mobile-link {
   display: none;
 }
+body .alert-notification {
+  position: fixed;
+  right: -350px;
+  top: 5px;
+  z-index: 9999;
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: rgb(234, 234, 234);
+  color: black;
+  font-family: poppins;
+  max-width: 350px;
+  transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+}
+body .alert-notification.shown {
+  right: 5px;
+}
+body .alert-notification.success {
+  background: rgb(26, 109, 26);
+  color: white;
+}
+body .alert-notification.error {
+  background: rgb(229, 59, 59);
+  color: white;
+}
 body .main-body {
   min-height: 100vh;
+  position: relative;
 }
 body .main-body .hero-section {
   width: 100%;
@@ -328,7 +362,6 @@ body .main-body .hero-section {
   padding-bottom: 30px;
   position: relative;
   overflow: hidden;
-  z-index: -1;
 }
 body .main-body .hero-section .hero-content {
   flex: 1;
@@ -338,6 +371,7 @@ body .main-body .hero-section .hero-content .hero-name-container .line {
   width: clamp(30px, 8vw, 150px);
   height: 3px;
   background: white;
+  z-index: -1;
 }
 body .main-body .hero-section .hero-content .hero-name-container .hero-name {
   margin-left: 7px;
@@ -369,7 +403,8 @@ body .main-body .hero-section .hero-content .hero-cta {
   font-weight: 500;
   font-size: 1.3rem;
   padding: 10px 20px;
-  z-index: 9;
+  position: relative;
+  display: inline-block;
 }
 body .main-body .hero-section .hero-content .arrow {
   position: absolute;
@@ -390,6 +425,7 @@ body .main-body .hero-section .code-image {
   max-width: clamp(100px, 20vw, 300px);
   top: calc(100% + 20px);
   right: calc(100% - clamp(100px, 20vw, 300px) + 10px);
+  z-index: -1;
 }
 body .main-body .qualities-section {
   background: black;
@@ -477,7 +513,6 @@ body .main-body .experience-section .experience-container .experience-content .c
   border: 2px solid #5994FF;
   margin-left: 60px;
   color: #5994FF;
-  padding: 15px 20px;
   font-weight: 500;
   font-size: 1.1rem;
   border-radius: 7px;
@@ -485,6 +520,22 @@ body .main-body .experience-section .experience-container .experience-content .c
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+  padding: 0px;
+  overflow: hidden;
+}
+body .main-body .experience-section .experience-container .experience-content .cv-btn .download-cv-text {
+  display: inline-block;
+  padding: 15px 20px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  word-break: keep-all;
+  color: white;
+}
+body .main-body .experience-section .experience-container .experience-content .cv-btn .download-cv-text.download-in-progress {
+  background: #5994FF;
+  display: none;
+  width: 0%;
+  overflow: hidden;
 }
 body .main-body .skills-section .skills-container {
   margin-top: 40px;
