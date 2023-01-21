@@ -193,7 +193,6 @@ function resizeTestimonialScrollElement () {
     testimonialCardContainer.addEventListener("scroll", (e) => {
         var scrollPercentage = testimonialCardContainer.scrollLeft / testimonialScrollWidth;
         var leftOff = (scrollBar.clientWidth * scrollPercentage);
-        console.dir(leftOff)
         scrollBarThumb.style.marginLeft = leftOff + "px";
     })
 
