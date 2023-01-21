@@ -188,6 +188,7 @@ function resizeTestimonialScrollElement () {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 
     scrollBarThumb.style.width = availableScrolledWidth + "px";
+    
 
     testimonialCardContainer.addEventListener("scroll", (e) => {
         var scrollPercentage = testimonialCardContainer.scrollLeft / testimonialScrollWidth;
@@ -228,6 +229,11 @@ window.addEventListener("load", (e) => {
         pageLoader.style.display = "none";
         resizeTestimonialScrollElement();
     }, 100)
+
+    
+    window.addEventListener("resize", ()=>{
+        resizeTestimonialScrollElement();
+    })
 
 
 
